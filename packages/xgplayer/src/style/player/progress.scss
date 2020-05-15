@@ -1,0 +1,119 @@
+.royplayer-progress{
+  display: block;
+  position: absolute;
+  height: 20px;
+  line-height: 20px;
+  left: 0;
+  right: 0;
+  outline: none;
+  top: -10px;
+  z-index: 35;
+  @at-root .royplayer.royplayer-volume-active &{
+    z-index: 15;
+  }
+  @at-root .royplayer.royplayer-definition-active &{
+    z-index: 15;
+  }
+  @at-root .royplayer.royplayer-textTrack-active &{
+    z-index: 15;
+  }
+}
+.royplayer-progress-outer{
+  background: $progressOuterBgColor;
+  display: block;
+  height: 3px;
+  line-height: 3px;
+  margin-top: 8.5px;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.royplayer-progress-cache,.royplayer-progress-played{
+  display: block;
+  height: 100%;
+  line-height: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.royplayer-progress-cache{
+  width: 0;
+  background: $progressCacheBgColor;
+}
+.royplayer-progress-played{
+  display: block;
+  width: 0;
+  background-image: $progressPlayedBgImage;
+  border-radius: 0 1.5px 1.5px 0;
+}
+.royplayer-progress-btn{
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: -6px;
+  width: 14px;
+  height: 16px;
+  border-radius: 6px;
+  background: #FFFFFF;
+  box-shadow: $progressPlayedShadow;
+}
+.royplayer-progress-point{
+  position: absolute;
+  &.royplayer-tips{
+    margin-left: 0;
+    top: -25px;
+    display: none;
+    z-index: 100;
+  }
+}
+.royplayer-progress-dot{
+  display: inline-block;
+  position: absolute;
+  height: 3px;
+  width: 5px;
+  top: 0px;
+  background: white;
+  border-radius: 6px;
+  z-index: 16;
+  .royplayer-progress-tip {
+    position: absolute;
+    left: 0;
+    top: -40px;
+    height: auto;
+    line-height: 30px;
+    width: auto;
+    transform: scale(0.8);
+    background: rgba(0, 0, 0, .3);
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, .8);
+    cursor: default;
+    white-space: nowrap;
+    display: none;
+  }
+}
+.royplayer-progress-dot-show{
+  .royplayer-progress-tip{
+    display: block;
+  }
+}
+.royplayer-progress-thumbnail{
+  position: absolute;
+  box-sizing: border-box;
+  &.royplayer-tips{
+    margin-left: 0;
+    display: none;
+    z-index: 99;
+  }
+}
+.royplayer-progress:hover,.royplayer-progress:focus{
+  .royplayer-progress-outer{
+    height: 6px;
+    margin-top: 7px;
+  }
+  .royplayer-progress-dot{
+    height: 6px;
+  }
+  .royplayer-progress-btn{
+    display: block
+  }
+}

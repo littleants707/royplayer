@@ -1,0 +1,7 @@
+.royplayer-playNext, .royplayer-playNext-img {
+    order: 1;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.85;
+    }
+}

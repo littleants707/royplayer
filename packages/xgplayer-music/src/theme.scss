@@ -1,0 +1,252 @@
+.royplayer-music{
+    .royplayer-controls {
+        display: flex;
+        height: 50px;
+        cursor: default;
+        .royplayer-backward, .royplayer-backward-img {
+            order: 0;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.85;
+            }
+        }
+        .royplayer-prev, .royplayer-prev-img {
+            order: 1;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.85;
+            }
+        }
+        .royplayer-play, .royplayer-play-img {
+            order: 2;
+            .royplayer-tips {
+                display: none;
+            }
+        }
+        .royplayer-next, .royplayer-next-img {
+            order: 3;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.85;
+            }
+        }
+        .royplayer-forward, .royplayer-forward-img {
+            order: 4;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.85;
+            }
+        }
+        .royplayer-volume {
+            order: 5;
+            cursor: pointer;
+            .royplayer-icon {
+                bottom: -13px;
+            }
+        }
+        .royplayer-poster {
+            position: static;
+            order: 6;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            vertical-align: middle;
+            position: relative;
+            top: 50%;
+            margin-top: -17px;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+        .royplayer-progress {
+            position: relative;
+            order: 7;
+            top: 70%;
+            left: 20px;
+            margin-top: -11px;
+            flex: 99;
+            .royplayer-name {
+                position: absolute;
+                left: 0px;
+                top: -120%;
+                font-size: 12px;
+                color: #ddd;
+            }
+            >* {
+                height: 3px;
+                margin-top: 8.5px;
+            }
+            .royplayer-progress-played:after {
+                top: -4px;
+                width: 10px;
+                height: 10px;
+                content: " ";
+                display: block;
+            }
+            .royplayer-tips {
+                display: none !important;
+            }
+        }
+        .royplayer-time {
+            order: 8;
+            margin-left: 30px;
+            line-height: 1;
+            position: relative;
+            top: 55%;
+        }
+        .royplayer-placeholder {
+            order: 999;
+            width: 0;
+        }
+        .royplayer-icon {
+            padding-top: 5px;
+        }
+    }
+    &.royplayer-ended .royplayer-controls{
+        display: flex;
+    }
+}
+.royplayer-music-fire{
+  .royplayer-controls {
+      display: flex;
+      height: 50px;
+      cursor: default;
+      .royplayer-backward, .royplayer-backward-img {
+          order: 0;
+          cursor: pointer;
+          &:hover{
+              opacity: 0.85;
+          }
+      }
+      .royplayer-prev, .royplayer-prev-img {
+          order: 1;
+          cursor: pointer;
+          &:hover{
+              opacity: 0.85;
+          }
+      }
+      .royplayer-play, .royplayer-play-img {
+          order: 2;
+          .royplayer-tips {
+              display: none;
+          }
+      }
+      .royplayer-next, .royplayer-next-img {
+          order: 3;
+          cursor: pointer;
+          &:hover{
+              opacity: 0.85;
+          }
+      }
+      .royplayer-forward, .royplayer-forward-img {
+          order: 4;
+          cursor: pointer;
+          &:hover{
+              opacity: 0.85;
+          }
+      }
+      .royplayer-volume {
+          order: 5;
+          cursor: pointer;
+      }
+      .royplayer-poster {
+          position: static;
+          order: 6;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          vertical-align: middle;
+          position: relative;
+          top: 50%;
+          margin-top: -17px;
+          img {
+              max-width: 100%;
+              max-height: 100%;
+          }
+      }
+      .royplayer-progress {
+          position: relative;
+          order: 7;
+          top: 70%;
+          left: 20px;
+          margin-top: -11px;
+          flex: 99;
+          .royplayer-name {
+              position: absolute;
+              left: 0px;
+              top: -120%;
+              font-size: 12px;
+              color: #ddd;
+          }
+          >* {
+              height: 3px;
+              margin-top: 8.5px;
+          }
+          .royplayer-progress-played:after {
+              top: -4px;
+              width: 10px;
+              height: 10px;
+              content: " ";
+              display: block;
+          }
+          .royplayer-tips {
+              display: none !important;
+          }
+      }
+      .royplayer-time {
+          order: 8;
+          margin-left: 30px;
+          line-height: 1;
+          position: relative;
+          top: 55%;
+      }
+      .royplayer-placeholder {
+          order: 999;
+          width: 0;
+      }
+      .royplayer-icon {
+          padding-top: 5px;
+      }
+  }
+  &.royplayer-ended .royplayer-controls{
+      display: flex;
+  }
+}
+.royplayer-lyric-item {
+    display: block;
+    line-height: 22px;
+    font-size: 14px;
+    color: black;
+    &.royplayer-lyric-item-active {
+        color: aquamarine;
+    }
+}
+.royplayer-lrcWrap {
+    overflow: auto;
+    height:300px;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+.royplayer-lrcForward {
+    position: absolute;
+    top: 20%;
+    left: 300px;
+    cursor: pointer;
+    width:0;
+    height:0;
+    border-width:0 10px 10px;
+    border-style:solid;
+    border-color:transparent transparent #333;/*透明 透明  灰*/
+}
+.royplayer-lrcBack {
+    position: absolute;
+    top: 80%;
+    left: 300px;
+    cursor: pointer;
+    width:0;
+    height:0;
+    border-width:10px 10px 0;
+    border-style:solid;
+    border-color:#333 transparent transparent;/*透明 透明  灰*/
+}

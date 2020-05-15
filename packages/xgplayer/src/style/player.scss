@@ -1,0 +1,105 @@
+// order:
+// royplayer-play  0
+// royplayer-playNext  1
+// royplayer-time  2
+// royplayer-placeholder 3
+// royplayer-volume 4
+// royplayer-definition 5
+// royplayer-bullet-btn 6
+// royplayer-textTrack 7
+// royplayer-playback 8
+// royplayer-rotate 9
+// royplayer-screenShot 10
+// royplayer-fullscreen 11
+
+@import "player/animation";
+@import "player/download";
+@import "player/rotate";
+
+.royplayer{
+    background: $playerBgColor;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    user-select: none;
+    -ms-user-select: none;
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    .royplayer-none{
+        display: none
+    }
+    &.royplayer-is-fullscreen{
+        width: 100%!important;
+        height: 100%!important;
+        // Undo any aspect ratio padding for fluid layouts
+        padding-top: 0 !important;
+        z-index: 9999;
+    }
+    &.royplayer-is-fullscreen.royplayer-inactive{
+        cursor: none;
+    }
+    video{
+        width:100%;
+        height: 100%;
+        outline: none;
+    }
+}
+.royplayer-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    fill:$playerIconColor;
+}
+
+@import "player/controls";
+@import "player/progress";
+@import "player/play";
+@import "player/playNext";
+@import "player/time";
+@import "player/tips";
+@import "player/volume";
+@import "player/placeholder";
+@import "player/start";
+@import "player/texttrack";
+@import "player/defination";
+@import "player/playback";
+@import "player/pip";
+@import "player/fullscreen";
+@import "player/cssFullscreen";
+@import "player/bullet";
+@import "player/loading";
+@import "player/replay";
+@import "player/enter";
+@import "player/screenShot";
+
+.royplayer-poster{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-size: cover;
+    background-position: center center;
+}
+.royplayer-live{
+    display: block;
+    font-size: 12px;
+    color: $liveColor;
+    line-height: 40px;
+    order: 1;
+}
+
+.royplayer .royplayer-none{
+    display: none;
+}
+
+@import "player/error";
+@import "player/mobile";

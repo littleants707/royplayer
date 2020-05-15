@@ -1,0 +1,47 @@
+{
+  "name": "royplayer-hls.js",
+  "version": "1.1.7",
+  "description": "royplayer plugin for hls",
+  "main": "./dist/index.js",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "webpack --progress --display-chunks -p",
+    "watch": "webpack --progress --display-chunks -p --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:littleants707/royplayer.git"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": [
+      "add-module-exports"
+    ]
+  },
+  "keywords": [
+    "mp4",
+    "fmp4",
+    "player",
+    "video"
+  ],
+  "author": "yuanYinguohui@littleants707.com",
+  "license": "MIT",
+  "dependencies": {
+    "deepmerge": "^2.0.1",
+    "event-emitter": "^0.3.5",
+    "hls.js": "^0.11.0"
+  },
+  "peerDependency": {
+    "royplayer": "^0.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^4.11.0",
+    "webpack-cli": "^3.0.2"
+  }
+}

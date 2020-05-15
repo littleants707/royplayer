@@ -1,0 +1,22 @@
+{
+  "lerna": "2.9.1",
+  "packages": [
+    "packages/*"
+  ],
+  "changelog": {
+    "repo": "cucygh/royplayer",
+    "labels": {
+      "player": "royplayer",
+      "mp4": "royplayer-mp4",
+      "hls": "royplayer-hls",
+      "hls.js": "royplayer-hls.js",
+      "flv": "royplayer-flv",
+      "flv.js": "royplayer-flv.js",
+      "dash": "royplayer-shaka",
+      "logger": "royplayer-logger",
+      "music": "royplayer-music"
+    },
+    "cacheDir": ".changelog"
+  },
+  "version": "1.1.5"
+}
