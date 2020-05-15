@@ -1,19 +1,3 @@
-<div align="center">
-    
-</div>
-<div align="center">
-    <a href="https://www.npmjs.com/package/xgplayer" target="_blank">
-        <img src="https://img.shields.io/npm/v/xgplayer.svg" alt="npm">
-    </a>
-    <a href="https://www.npmjs.com/package/xgplayer" target="_blank">
-        <img src="https://img.shields.io/npm/l/xgplayer.svg" alt="license">
-    </a>
-    <a href="http://commitizen.github.io/cz-cli/">
-        <img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg" alt="commitizen">
-    </a>
-</div>
-<br>
-
 English | [简体中文](README.zh-CN.md)
 
 ### Introduction
