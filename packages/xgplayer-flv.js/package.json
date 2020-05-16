@@ -1,6 +1,6 @@
 {
   "name": "royplayer-flv.js",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "web video player",
   "main": "./dist/index.js",
   "scripts": {

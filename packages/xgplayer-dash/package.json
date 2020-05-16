@@ -1,6 +1,6 @@
 {
   "name": "royplayer-dash",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "royplayer plugin for MPEG-DASH",
   "main": "./dist/index.js",
   "scripts": {
