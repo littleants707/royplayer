@@ -3,6 +3,16 @@
   "packages": [
     "packages/*"
   ],
+  "command": {
+    "publish": {
+      "ignoreChanges": ["ignored-file", "*.md"],
+      "message": "chore(release): publish"
+    },
+    "bootstrap": {
+      "ignore": "component-*",
+      "npmClientArgs": ["--no-package-lock"]
+    }
+  },
   "changelog": {
     "repo": "littleants707/royplayer",
     "labels": {
@@ -18,5 +28,5 @@
     },
     "cacheDir": ".changelog"
   },
-  "version": "1.1.6"
+  "version": "1.1.5"
 }

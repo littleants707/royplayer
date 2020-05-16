@@ -1,6 +1,6 @@
 {
   "name": "royplayer-music",
-  "version": "1.1.6",
+  "version": "1.1.5",
   "description": "royplayer plugin for music",
   "main": "./dist/index.js",
   "scripts": {
