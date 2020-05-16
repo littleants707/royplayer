@@ -1,6 +1,6 @@
 {
   "name": "royplayer-flv",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "flv demuxer for royplayer",
   "main": "./dist/index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/littleants707/royplayer.git"
   },
   "keywords": [],
-  "author": "leo",
+  "author": "295446101@qq.com",
   "license": "MIT",
   "devDependencies": {
     "babel": "^6.23.0",

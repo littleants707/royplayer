@@ -1,6 +1,6 @@
 {
   "name": "royplayer-flv.js",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "web video player",
   "main": "./dist/index.js",
   "scripts": {
@@ -24,7 +24,7 @@
     "type": "git",
     "url": "git+https://github.com/littleants707/royplayer.git"
   },
-  "author": "cuc_ygh@163.com",
+  "author": "295446101@qq.com",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.3",

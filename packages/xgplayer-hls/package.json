@@ -1,6 +1,6 @@
 {
   "name": "royplayer-hls",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "royplayer plugin for hls",
   "main": "./dist/index.js",
   "scripts": {
