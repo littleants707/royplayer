@@ -26,7 +26,7 @@
     "webworkify-webpack-dropin": "^1.1.9"
   },
   "name": "royplayer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "royplayer for video player",
   "main": "index.js",
   "scripts": {
@@ -61,7 +61,7 @@
       "**/dist/*.js"
     ]
   },
-  "author": "yinguohui@bytedance.com",
+  "author": "295446101@qq.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/littleants707/royplayer/issues"
